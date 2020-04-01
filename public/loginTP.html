@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amaranth'>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Jomolhari&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/formStyleTP.css">
+    <script defer type="text/javascript" src="../javascripts/loginJS.js"></script>
+</head>
+
+<body>
+<div class="main">
+    <div class="voyager">
+        <h1><a href="/">Voyager</a></h1>
+    </div>
+
+    <form id="loginForm" action="/users/login" method="POST">
+        <fieldset>
+            <header class="formTitle">Login</header>
+            <p>_________________________________________</p>
+
+            <label for="uname">Username:</label><br />
+            <i class="fa fa-user icon"></i> <!-- image for profile -->
+            <input type="text" id="uname" name="uname" required placeholder="Username"/><br /><br />
+
+            <label for="pword">Password:</label><br />
+            <i class="fa fa-lock icon"></i> <!-- image for password -->
+            <input type="password" id="pword" name="pword" required placeholder="Password"/><br /><br />
+
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset" id="reset" value="Cancel">
+
+            <footer><br /></footer>
+        </fieldset>
+    </form>
+
+    <div id="error"></div>
+
+    <p class="extraInfo">New here? Follow this <a href="/users/register"><em>link</em></a> to Register!</p>
+</div>
+
+<!--<footer class="footer">Trenton Smith<br />6368<br />CSC 317</footer>-->
+</body>
+</html>

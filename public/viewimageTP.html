@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Image</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amaranth'>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Jomolhari&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/viewImageTP.css">
+    <script defer type="text/javascript" src="../javascripts/viewimageJS.js"></script>
+</head>
+
+<body>
+<div id="nameplate">
+    <h1><a href="/">Voyager</a></h1>
+</div>
+
+<p><br/></p>
+<div class="title" id="title">Error: This photo is not in the database</div> 
+
+<div class="image">
+    <input class="image" type="image" id="image" src="../images/1.jpg" alt="Image missing"> 
+</div>
+
+<div class="description" id="description">Error: This is just a placeholder image, try registering and uploading an image first</div> 
+
+<div class="container">
+    <form id="commentsForm">
+        <label for="comments">Comments:</label><br/>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+
+        <input type="hidden" id="imageId" name="imageId">
+        <a href='/users/login'><input type="button" id="submit" value="Submit"></a>
+        <div class="newComment" id="newComment"></div>
+    </form>
+</div>
+
+</body>
+</html>

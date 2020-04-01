@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    /*min-height: 180vh;*/
+    /*background-color: #141518*/
+    /*background-color: gray*/
+    background-color: #141518;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#nameplate{
+    background-image: url("../css/grayMountains2.jpg");
+    height: 300px;
+    background-size: cover;
+    font-family: 'Fugaz One', cursive;
+    color: #141518;
+    font-size: 8em;
+    margin-top: -4%;
+}
+
+#splashBanner {
+    background-color: #141518;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: max-content;
+    text-align: right;
+    position: sticky;
+    top: 0
+}
+
+.button{
+    background-color: #9E9E9E;
+    color: white;
+    font-size: 1.5em;
+    font-family: Amaranth;
+    size: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+    margin: 5px;
+    border: hidden
+}
+/*
+#loginButton{
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    float: right;
+    display: inline-block;
+}*/
+#loginButton:hover{
+    border-bottom: solid aqua
+}
+
+#registerButton{
+    float: right
+}
+#registerButton:hover{
+    border-bottom: solid aqua
+}
+#submit{
+    float: left;
+}
+#submit:hover{
+    cursor: pointer;
+    border-bottom: aqua;
+}
+
+#postButton{
+    float: left
+}
+#postButton:hover{
+    border-bottom: solid aqua
+}
+
+#searchBar{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 800px;
+    font-family: Amaranth;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    margin-left: 5.5%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
