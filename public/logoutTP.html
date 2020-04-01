@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amaranth'>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Jomolhari&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/logoutTP.css">
+</head>
+
+<body>
+<div class="main">
+    <div class="voyager">
+        <h1><a href="/">Voyager</a></h1>
+    </div>
+
+    <form id="logoutForm" action="/users/logout" method="POST">
+        <fieldset>
+            <header class="formTitle" id="logoutTitle">Would you like to log out?</header>
+            <p>_________________________________________</p>
+
+            <input type="submit" id="submit" value="Yes">
+            <a href='/'><input type="button" id="reset" value="No"></a>
+
+            <footer><br /></footer>
+        </fieldset>
+    </form>
+
+    <div id="error"></div>
+
+    <p class="extraInfo">Get lost? Follow this <a href="/"><em>link</em></a> back to the homepage!</p>
+</div>
+
+<!--<footer class="footer">Trenton Smith<br />6368<br />CSC 317</footer>-->
+</body>
+</html>

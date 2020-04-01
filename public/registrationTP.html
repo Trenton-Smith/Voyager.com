@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amaranth'>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Jomolhari&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/formStyleTP.css">
+    <script defer type="text/javascript" src="../javascripts/registrationJS.js"></script>
+</head>
+
+<body>
+<div class="main">
+    <div class="voyager">
+        <h1><a href="/">Voyager</a></h1>
+    </div>
+
+    <form id="registrationForm" action="/users/register" method="POST">
+        <fieldset>
+            <header class="formTitle">Registration</header>
+            <p>_________________________________________</p>
+
+            <label for="uname">Username:</label><br />
+            <i class="fa fa-user icon"></i> <!-- image for username -->
+            <input type="text" id="uname" name="uname" placeholder="Username" /><br /><br />
+
+            <label for="email">Email:</label><br />
+            <i class="fa fa-envelope icon"></i> <!-- image for email -->
+            <input type="email" id="email" name="email" required placeholder="email@website.com" /><br /><br />
+
+            <label for="pword">Password:</label><br />
+            <i class="fa fa-lock icon"></i> <!-- image for password -->
+            <input type="password" id="pword" name="pword" placeholder="Password" /><br /><br />
+
+            <label for="pwordc">Confirm Password:</label><br />
+            <i class="fa fa-lock icon"></i> <!-- image for password -->
+            <input type="password" id="pwordc" name="pwordc" placeholder="Password" /><br /><br />
+
+            <input type="checkbox" id="thirteenAccept" name="thirteenAccept" required>
+            Are you 13 years of age or older?<br />
+
+            <input type="checkbox" id="tosAccept" name="tosAccept" required>
+            Do you accept the <!--<a href="termsofservice.txt" target="_blank">-->Terms of Service<!--</a>--> and
+            <!--<a href="privacypolicy.txt" target="_blank">-->Privacy Policy<!--</a>-->?<br /><br />
+
+            <input type="submit" id="submit" value="Register">
+            <input type="reset" id="reset" value="Cancel">
+
+            <footer><br /></footer>
+        </fieldset>
+    </form>
+
+    <div id="error"></div>
+
+    <p class="extraInfo">Already registered? Follow this <a href="/users/login"><em>link</em></a> to the login page!</p>
+</div>
+
+<!--<footer class="footer">Trenton Smith<br />6368<br />CSC 317</footer>-->
+</body>
+</html>

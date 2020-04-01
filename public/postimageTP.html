@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post_Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Amaranth'>
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Jomolhari&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../css/formStyleTP.css">
+    <script defer type="text/javascript" src="../javascripts/postimageJS.js"></script>
+</head>
+
+<body>
+<div class="main">
+    <div class="voyager">
+        <h1><a href="/">Voyager</a></h1>
+    </div>
+
+    <form id="postImageForm" action="/users/post" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <header class="formTitle">Post Image</header>
+            <p>_________________________________________</p>
+
+            <label for="title">Title:</label><br />
+            <input type="text" id="title" name="title" placeholder="Title"><br /><br />
+
+            <label for="description">Description:</label><br />
+            <textarea id="description" name="description" placeholder="Image Description" rows="10" cols="20"></textarea><br /><br />
+
+            <input type="file" id="userImage" name="userImage"><br /><br />
+
+            <input type="checkbox" id="acceptUse" name="acceptUse" required>
+            Please read and accept the <!-- <a href="acceptableUse.txt" target="_blank"> -->Acceptable Use Policy<!-- </a> -->.<br /><br />
+
+            <input type="submit" id="submit" value="Post Image">
+            <input type="reset" id="reset" value="Cancel">
+
+            <footer><br /></footer>
+        </fieldset>
+    </form>
+
+    <div id="error"></div>
+
+</div>
+
+<!--<footer class="footer">Trenton Smith<br />6368<br />CSC 317</footer>-->
+</body>
+</html>
